@@ -29,10 +29,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-
-author:
-  name: John Smith
-  email: "john.smith@foobar.com"
+site: 
+  author:
+    name: John Smith
+    email: "john.smith@foobar.com"
 
 minima:
   social_links:
