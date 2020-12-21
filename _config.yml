@@ -65,9 +65,10 @@ minima:
     youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
