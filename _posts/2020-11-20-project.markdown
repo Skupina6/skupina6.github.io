@@ -1,4 +1,0 @@
----
-layout: showcase
----
-This is my project showcase layout for Jekyll. It will use another template to present my hobby projects
