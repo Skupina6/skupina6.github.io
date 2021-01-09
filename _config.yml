@@ -1,7 +1,7 @@
 title: Matej
 subtitle: Backend DevOps engeneer
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  One picture beats a hundred words. Thats why I created this portfolio page to show my projects, introduce my blog and more.
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,7 +14,7 @@ urls:
     - text: Blog
       url: /blog
     - text: Gallery
-      url: /gallery
+      url: /insta
     - text: Contact
       url : /contact
 
@@ -22,7 +22,7 @@ urls:
 
 author_logo: profile.png
 author: Matej J
-author_bio: Hello, my name is Matej and I am a software engeneer building apps with Java and Python
+author_bio: Hello, my name is Matej and I am a software engeneer building apps with Java and Python. In my free time, I like to work on hobby projects in the field of web scraping and automation. I am going to present some of my projects on this website. <br> You can read about my education and work experience [on my linkedin](https://www.linkedin.com/in/matejjurko/)
 author_location: Slovenia
 typewrite-text: “Simplicity is the soul of efficiency.” – Austin Freeman
 
@@ -77,7 +77,7 @@ disqus_shortname: skupina6
 # wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # formspree (contact form)
 formspree_email: f/xyybbala
