@@ -12,8 +12,6 @@ urls:
     - text: About
       url: /about
     - text: Blog
-      url: /blog
-    - text: Gallery
       url: /insta
     - text: Contact
       url : /contact
@@ -22,7 +20,11 @@ urls:
 
 author_logo: profile.png
 author: Matej J
-author_bio: Hello, my name is Matej and I am a software engeneer building apps with Java and Python. In my free time, I like to work on hobby projects in the field of web scraping and automation. I am going to present some of my projects on this website. <br> You can read about my education and work experience [on my linkedin](https://www.linkedin.com/in/matejjurko/)
+author_bio: >- 
+  Hello, my name is Matej and I am a software engeneer building apps with Java and Python. In my free time, I like to work on hobby projects in the field of web scraping and automation. I am going to present some of my projects on this website. 
+  
+  
+  You can read about my education and work experience [on my linkedin](https://www.linkedin.com/in/matejjurko/)
 author_location: Slovenia
 typewrite-text: “Simplicity is the soul of efficiency.” – Austin Freeman
 
@@ -52,15 +54,49 @@ typewrite-text: “Simplicity is the soul of efficiency.” – Austin Freeman
 
 # Projects
 author_project_details:
-  - project_thumbnail: gamershub.png
-    project_title: Gamers Hub
-    project_description: A Platform built for Gamers and Game Devs
-    project_url: https://gamershub.in
+  - project_thumbnail: instamap.png
+    project_title: Instagram image map
+    project_description: >-
+      Application is used to display images from Instagram and display their location on the map. There are picture thumbnails on the map, which represent picture. By clicling on the marker, you can see bigger picture and its bio. You can also see links to a location. Clicking on a image takes you to Instagram post.
+
+
+
+      **Technical details**
+
+
+      Application is built using Python (Django) and Leaflet (Open Street map). I also use Marker clustering for Leaflet.
+
+
+      *Disclaimer: I do not own the media. Instagram is the owner.*
+
+      > This url may be unavaliable due to performance issues.
+    
+    project_url: https://aqueous-caverns-26263.herokuapp.com/
     visibility: true
-  - project_thumbnail: hack4r.PNG
-    project_title: Hack4r
-    project_description: A Platform built for Hackers and Penetration Testers
-    project_url: https://hack4r.com
+
+  - project_title: Apartment phone number scraper
+    project_description: >-
+      When I was looking for an apartment, I found a lot of appropriate housings. The problem was that ads for those housings did not have all the details, so I had to call owners.
+
+
+      The problem is that it becomes confusing when you have a large number of contacts. You dont know which number belongs to which housing owener.
+
+      
+      So I was thinking about this problem, and I said: Wouldnt be cool if I alreads had those contacts linked with ads? So the idea for this app was born.
+
+
+      This application does not have UI, it is a scheduled application. Developer defines url where the scraping wil commence, and selectors for apartment title, description, and phone number. When run, application will scrape those parameters and add them in Google Contacts.
+
+
+
+      This application was initially meant for [nepremicnine.net](https://www.nepremicnine.net/). However, the best thing is that this scraper can also be used for other things, like scraping car or phone advertisements (on a webpages like auto.net or bolha.com). You only need to change data selectors.
+
+
+      **Techincal details**
+
+      
+      Application is built using Python (Django), APScheduler and Google Python libary.
+
     visibility: true
 
 # social links
