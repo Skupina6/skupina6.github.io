@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: ":ramen: Instagram image map"
 layout: post
 date: 2016-01-23 22:10
 tag: jekyll
@@ -13,23 +13,12 @@ author: johndoe
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+[Demo](https://aqueous-caverns-26263.herokuapp.com/)
+> This url may be unavaliable due to performance issues.
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+Application is used to display images from Instagram and display their location on the map. There are picture thumbnails on the map, which represent picture. By clicling on the marker, you can see bigger picture and its bio. You can also see links to a location. Clicking on a image takes you to Instagram post.
 
----
+##  Technical details
+Application is built using Python (Django) and Leaflet (Open Street map). I also use Marker clustering for Leaflet.
 
-What has inside?
-
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
-
----
-
-[Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
+*Disclaimer: I do not own the media. Instagram is the owner.*
