@@ -1,5 +1,4 @@
-namespace :assets do
-  task :precompile do
-    puts `bundle exec jekyll build`
-  end
-end
+#!/usr/bin/env ruby
+
+require 'html-proofer'
+HTMLProofer.check_directory("./_site").run
