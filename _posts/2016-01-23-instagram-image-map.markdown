@@ -1,15 +1,18 @@
 ---
-title: ":ramen: Instagram image map"
+title: ":camera: Instagram image map"
 layout: post
-date: 2016-01-23 22:10
-tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+date: 2020-01-10 22:10
+tag:
+ - django
+ - python
+ - leaflet
+image: /assets/images/image-map.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "Shows where Instagram images were taken"
 category: project
-author: johndoe
+author: matej
 externalLink: false
 ---
 
