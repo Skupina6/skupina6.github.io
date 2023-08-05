@@ -16,23 +16,18 @@ author: matej
 externalLink: false
 ---
 
-Reddit is a social network allows you to upload photos. You can view a lot of impressive photos of different locations, however it is not possible to "tag" a certain photo with a location.
+Reddit is a social network allows you to upload photos. Users can view a lot of impressive photos of different locations. However, currently it is not possible to add a location metadata a certain photo.
 
-The idea for this project came from this. I was looking for a way to *mark* photo with location, so I would be able to search all photos taken within some country, city or region. Also, I was looking for a way to quickly provide relevant information regarging certain information. 
+The idea for this project came from lack of this feature. Users would benefit having a way to *mark* photo with location, so they would be able to search all content  taken within some country, city or region. Also, it would be usefulto have all relevant data regarging certain location. 
 
-In a scope of this project I built Reddit bot (automated account) that responds to its mentions (text that includes unique username of the bot). The mention comment acts as a search command for location. For example:
+In a scope of this project I built a automated account that responds to comments where it is mentioned (text that includes unique username of the account). The mention comment acts as a search command for location. For example:
 
 > u/LocationInfoBot Crawford path
 
 ![Location info bot response](https://user-images.githubusercontent.com/11059438/111335197-79a33700-8674-11eb-8ee7-f259ad3946a1.png)
 
 
-Bot will return location description (which can later be searched), list of nearby location, relevant links: wikipedia, map, hotels, hiking, thumblr, pinterest. Facebook and instagram links were removed in order to avoid post removals.
-
-Other advantage of using this bot:
-- faster than googling for relevant links
-- on phone you dont need to switch between Reddit and browser app
-- you can search for posts by location keywords (country, region, nearby locations etc.)
+Bot will return location description, list of nearby location, relevant links: wikipedia, map, hotels, hiking, thumblr, pinterest. This automated account helps users improve SEO of their content - users can use Reddit search engine to easier find such content or filter content by location .
 
 
 **Techincal details**

@@ -10,24 +10,23 @@ tag:
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Reads phone numbers from ads, adds them to Google contacts and links them to ad."
+description: "Reads phone numbers from listings and adds them to Google contacts and links them to online content"
 category: project
 author: matej
 externalLink: false
 ---
 
-When I was looking for an apartment, I found a lot of appropriate housings. The problem was that ads for those housings did not have all the details, so I had to call owners.
+The idea for this project came from the (long) process of looking for an apartment. Currently, there are multiple platforms for real-estate listings, but every one has its problems.
 
-The problem is that it becomes confusing when you have a large number of contacts. You dont know which number belongs to which housing owner.
+First problems is that the listings dont always include all of the details. In this case, user would need to call the contact mentioned in the listing to get all the information. With a large number of contacts, it becomes hard to keep track of all relations between contact and listings. 
+
+Initial project enabled listing notifications trough Discord. This allowed it to send metadata, links, images and phone numbers. Later version of the app added functionality to automatically add phone numbers (associated with listing) to users phone contacts (Google People app)
+
+This application does not have user interface, instead it is a scheduled application. User defines url where the app will get data for real-estate listings and selectors for real-estate title, description, and phone number. When run, application will scrape those parameters and add them in Google Contacts.
+
+While this application was originally meant for real-estates, it can also be used for other web apps, like car or phone selling websites. User only needs to change data selectors.
 
 
-So I was thinking about this problem, and I said: Wouldnt be cool if I alreads had those contacts and they were already linked with the ads? So the idea for this app was born.
-
-This application does not have UI, it is a scheduled application. Developer defines url where the scraping wil commence (ad list), and selectors for apartment title, description, and phone number. When run, application will scrape those parameters and add them in Google Contacts.
-
-This application was initially meant for [nepremicnine.net](https://www.nepremicnine.net/). However, the best thing is that this scraper can also be used for other things, like scraping car or phone advertisements (on a webpages like auto.net or bolha.com). You only need to change data selectors.
-
-
-**Techincal details**
+*Techincal details*
 
 Application is built using Python (Django), APScheduler and Google Python libary.

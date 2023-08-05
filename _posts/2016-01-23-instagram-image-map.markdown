@@ -16,12 +16,8 @@ author: matej
 externalLink: false
 ---
 
-[Demo](https://aqueous-caverns-26263.herokuapp.com/)
-> This url may be unavaliable due to performance issues.
-
-Application is used to display images from Instagram and display their location on the map. There are picture thumbnails on the map, which represent picture. By clicling on the marker, you can see bigger picture and its bio. You can also see links to a location. Clicking on a image takes you to Instagram post.
+This application was developed by the inspiration to create photo portfolio based on location where photos were taken. Application display images from Instagram feed. By clicking on each image it displays larger picture, its description and tags. User can see more info by going directly to Instagram posts.
 
 ##  Technical details
-Application is built using Python (Django) and Leaflet (Open Street map). I also use Marker clustering for Leaflet.
+Application is built using Python (Django) and Leaflet (Open Street map). It also uses Marker clustering for Leaflet.
 
-*Disclaimer: I do not own the media. Instagram is the owner.*

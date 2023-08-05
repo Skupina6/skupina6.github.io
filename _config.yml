@@ -1,6 +1,6 @@
 # main text of home
 name: Matej J
-bio: “Simplicity is the soul of efficiency.” – Austin Freeman
+bio: “You define your own life. Don't let other people write your script.” – Oprah Winfrey
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -36,7 +36,7 @@ disqus:
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 # twitter: mytwitter
-instagram: matej.821
+# instagram: insta
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
@@ -55,7 +55,7 @@ github: matej2
 authors:
   matej:
     name: Matej J
-    bio: Backend developer doing Python and Java
+    bio: Backend software engeneer doing Python and Java
     external-image: false
     picture: assets/images/profile.jpg
 
