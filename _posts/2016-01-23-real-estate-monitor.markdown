@@ -1,5 +1,5 @@
 ---
-title: ":telephone: Apartment phone number scraper"
+title: ":telephone: Real estate monitor service"
 layout: post
 date: 2020-01-10 22:10
 tag: 
@@ -10,7 +10,7 @@ tag:
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Reads phone numbers from listings and adds them to Google contacts and links them to online content"
+description: "Monitors real estate listings, sends notifications and saves phone numbers for listings"
 category: project
 author: matej
 externalLink: false
@@ -27,6 +27,6 @@ This application does not have user interface, instead it is a scheduled applica
 While this application was originally meant for real-estates, it can also be used for other web apps, like car or phone selling websites. User only needs to change data selectors.
 
 
-*Techincal details*
+##  Technical details
 
 Application is built using Python (Django), APScheduler and Google Python libary.

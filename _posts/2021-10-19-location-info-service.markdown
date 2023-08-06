@@ -1,5 +1,5 @@
 ---
-title: ":world_map: Location info bot"
+title: ":world_map: Location info service"
 layout: post
 date: 2021-10-19 05:10
 tag: 
@@ -30,6 +30,6 @@ In a scope of this project I built a automated account that responds to comments
 Bot will return location description, list of nearby location, relevant links: wikipedia, map, hotels, hiking, thumblr, pinterest. This automated account helps users improve SEO of their content - users can use Reddit search engine to easier find such content or filter content by location .
 
 
-**Techincal details**
+##  Technical details
 
 Application is built using Python (Django), APScheduler and PRAW.
