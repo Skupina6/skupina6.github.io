@@ -4,46 +4,79 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
-    {% endif %}
-
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <meta name=author content="{{ site.name }}">
-
-    {% seo %}
-
-    {% include favicon.html %}
-
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: #1a202c;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
     </style>
-
 </head>
-<body>
-
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
-            {% else %}
-                <div class="{{ page.title | downcase }}">
-            {% endif %}
-        {% endif %}
-
-            {{ content }}
+<body class="bg-gray-100">
+    <nav>
+        <h2 class="text-2xl font-bold mb-6">Navigation</h2>
+        <a href="#about" class="hover:text-yellow-500"><i class="fas fa-user"></i> About Me</a>
+        <a href="#education" class="hover:text-yellow-500"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#experience" class="hover:text-yellow-500"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="hover:text-yellow-500"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#social" class="hover:text-yellow-500"><i class="fas fa-share-alt"></i> Social Links</a>
+        <div class="mt-6">
+            <h3 class="text-xl font-bold mb-4">Follow Me</h3>
+            {% include social-links.html %}
         </div>
+    </nav>
+    <div class="content">
+        <section id="about" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700">I am a passionate programmer with a love for creating innovative solutions. With a background in computer science, I have developed a strong foundation in various programming languages and technologies.</p>
+        </section>
+        <section id="education" class="bg-white p-6 rounded-lg shadow-md mt-6">
+            {% for post in site.categories.education %}
+            <h3 class="text-2xl font-semibold mb-2">{{ post.title }}</h3>
+            <p class="text-gray-700">{{ post.content | strip_html | truncatewords: 50 }}</p>
+            {% endfor %}
+        </section>
+        <section id="experience" class="bg-white p-6 rounded-lg shadow-md mt-6">
+            {% for post in site.categories.experience %}
+            <h3 class="text-2xl font-semibold mb-2">{{ post.title }}</h3>
+            <p class="text-gray-700">{{ post.content | strip_html | truncatewords: 50 }}</p>
+        {% endfor %}
+        </section>
+        <section id="projects" class="bg-white p-6 rounded-lg shadow-md mt-6">
+            {% for post in site.categories.experience %}
+            <h3 class="text-2xl font-semibold mb-2">{{ post.title }}</h3>
+            <p class="text-gray-700">{{ post.content | strip_html | truncatewords: 50 }}</p>
+        {% endfor %}
+        </section>
     </div>
-
-    {% include icons.html %}
-
 </body>
 </html>
